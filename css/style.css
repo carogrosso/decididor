@@ -1,0 +1,27 @@
+#contenedor{
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contenedor #verdadero{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#contenedor #btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#contenedor img{
+    width: 300px;
+}
+.presentacion{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decididor</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="contenedor">
+            <h1>Bienvenido!</h1>
+        <div class="presentacion">
+            <h2>Sos indeciso? No sufras más!</h2>
+            <h2>El decididor llegó a tu vida... Probalo.</h2>
+        </div>
+        <input type="text" id="verdadero" placeholder="Opción 1">
+        <input type="text" id="falso" placeholder="Opción 2">
+        <button id="btn">Decidir</button>
+        <img src="" alt="" id="image">
+        <h1 id="txt"></h1>
+    </div>
+
+    <script>
+    var boton = document.getElementById("btn");
+    var imagen = document.getElementById("image");
+    var txt = document.getElementById("txt");
+    var opcion1 = document.getElementById("verdadero");
+    var opcion2 = document.getElementById("falso");
+
+    boton.addEventListener("click", () => {
+        imagen.src = "img/loading.gif";
+        txt.innerHTML = "Decidiendo...";
+        setTimeout(function () {
+        var numeroRandom = Math.round(Math.random() * (1-0)+1);
+        if (numeroRandom == 1){
+            txt.innerHTML = opcion1.value
+            image.src = ""
+        } else {
+            txt.innerHTML = opcion2.value
+            image.src = ""
+        }
+    }, 1000);
+    });
+    
+    </script>
+</body>
+</html>
